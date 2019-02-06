@@ -1,0 +1,14 @@
+{
+  "name": "administrationdiscord",
+  "version": "1.0.0",
+  "description": "Bot d'administration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LeTerrienDu27",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
