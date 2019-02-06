@@ -18,7 +18,22 @@ bot.on("message", async function(message) {
 
     switch(args[0].toLowerCase()) {
         case "invite":
-        message.channel.send("test")
+        message.channel.send("",{
+            embed: {
+                color: 0000000
+                author: message.author.name,
+                title: '',
+                fields: [{
+                    name: "Lien d'invitation",
+                    value: "https://discord.gg/vCNMJ68",
+                    inline: false
+                }],
+                footer: {
+                    footer: "Partagez le lien à vos amis ;)"
+                },
+            }
+        });
+        break;
     }
 });
 
