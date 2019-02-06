@@ -21,6 +21,7 @@ bot.on("message", async function(message) {
         message.channel.send("",{
             embed: {
                 color: f700ed,
+                author: message.author.name,
                 title: '',
                 fields: [{
                     name: "Lien d'invitation",
@@ -36,4 +37,4 @@ bot.on("message", async function(message) {
     }
 });
 
-bot.login("NTQyNzk0OTc2NTU2MzUxNDkx.DzzplA.l4fYkftH9bSunBzIFx9ccLE_AqE");
+bot.login("NTQyNzk0OTc2NTU2MzUxNDkx.Dzzq9A.YcQREx14bfllKfNYzzlyUyASw50");
