@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-var PREFIX = ":";
+var PREFIX = "!";
 
 var bot = new Discord.Client();
 
@@ -18,18 +18,18 @@ bot.on("message", async function(message) {
 
     switch(args[0].toLowerCase()) {
         case "invite":
-        message.channel.send("",{
+        message.channel.send("", {
             embed: {
-                color: f700ed,
+                color: 0xFF0000,
                 author: message.author.name,
                 title: '',
                 fields: [{
-                    name: "Lien d'invitation",
-                    value: "https://discord.gg/vCNMJ68",
+                    name: "Lien d'invitation discord",
+                    value: "https://discord.gg/CsH3kj",
                     inline: false
                 }],
                 footer: {
-                    footer: "Partagez le lien à vos amis ;)"
+                    footer: "Partager ce lien à tous vos amis !",
                 },
             }
         });
@@ -37,4 +37,4 @@ bot.on("message", async function(message) {
     }
 });
 
-bot.login("NTQyNzk0OTc2NTU2MzUxNDkx.Dzzq9A.YcQREx14bfllKfNYzzlyUyASw50");
+bot.login(process.env.TOKEN);
